@@ -1,0 +1,125 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: sans-serif; /* Uma fonte mais moderna */
+    margin: 20px; /* Espaçamento nas bordas da página */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto principal */
+}
+
+/* Estilos para os títulos */
+h1, h2 {
+    color: #0056b3; /* Uma cor azul para os títulos */
+    text-align: center; /* Centralizar o título principal */
+}
+h2 {
+    margin-top: 30px; /* Espaço acima dos subtítulos */
+    border-bottom: 1px solid #ccc; /* Linha abaixo dos subtítulos */
+    padding-bottom: 5px;
+}
+
+/* Container do formulário */
+#form-container {
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
+    margin-bottom: 20px;
+}
+
+/* Estilos para os campos do formulário */
+#form-container div {
+    margin-bottom: 15px; /* Espaço entre as linhas do formulário */
+}
+
+#form-container label {
+    display: inline-block; /* Para ficar ao lado do input */
+    width: 150px; /* Largura fixa para alinhar */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#form-container input[type="text"],
+#form-container input[type="number"] {
+    width: 250px; /* Largura dos campos */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão */
+#adicionar-btn {
+    background-color: #28a745; /* Cor verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    font-size: 16px;
+    display: block; /* Ocupa a linha inteira */
+    margin: 10px auto 0; /* Centraliza com margem superior */
+}
+
+#adicionar-btn:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Linha horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordas cinza claro */
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto */
+}
+
+/* Estilo para o cabeçalho da tabela */
+thead {
+    background-color: #0056b3; /* Fundo azul */
+    color: white; /* Texto branco */
+}
+
+/* Linhas pares da tabela com fundo diferente (zebrado) */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para o container do total */
+#total-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef; /* Fundo cinza claro */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right; /* Alinha o total à direita */
+    font-size: 1.2em; /* Tamanho da fonte maior */
+    font-weight: bold;
+}
+
+/* Estilos para o botão de deletar (que adicionaremos depois com JS) */
+.delete-btn {
+    background-color: #dc3545; /* Cor vermelha */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Vermelho mais escuro */
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Compras</title>
+    <!-- Link para o CSS (que criaremos depois) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Orçamento de Compras</h1>
+
+    <!-- Formulário para adicionar novos itens -->
+    <div id="form-container">
+        <h2>Adicionar Item</h2>
+        <div>
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+        </div>
+        <div>
+            <label for="valor">Valor Unitário (R$):</label>
+            <input type="number" id="valor" name="valor" min="0" step="0.01" required>
+        </div>
+        <button id="adicionar-btn">Adicionar Item</button>
+    </div>
+
+    <hr> <!-- Linha horizontal para separar -->
+
+    <!-- Tabela para exibir os itens do orçamento -->
+    <h2>Itens do Orçamento</h2>
+    <table id="tabela-orcamento">
+        <thead>
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Valor Total Item</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- As linhas da tabela serão adicionadas aqui pelo JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Div para mostrar o valor total -->
+    <div id="total-container">
+        <strong>Total Geral: R$ <span id="valor-total">0.00</span></strong>
+    </div>
+
+    <!-- Link para o JavaScript (que criaremos depois) -->
+    <script src="script.js"></script>
+</body>
+</html>
